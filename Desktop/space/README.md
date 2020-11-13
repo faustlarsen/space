@@ -19,7 +19,7 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 
 -  Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
 
--  Determines how many years a user has left to live on each planet… (yikes!) To do this, the application will have to calculate the user's life expectancy. You can determine average life expectancy as you see fit. A simple way to do this would be to have the user input the average life expectancy for their demographic. A more involved way to do this would be to collect other information from the user (e.g. lifestyle, country of residence, activity level, etc.) to determine their life expectancy.
+-  Determines how many years a user has left to live on each planet.
 
 -  If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
 
@@ -30,35 +30,42 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 **Input**: 36
 
 **Output**: 36
-___________________________________________________________________________________
+________________________________________________________________________________
 
 2. SPEC: Should return user age in Mercury years
 
 **Input**: 36
 
 **Output**: 150
-___________________________________________________________________________________
+________________________________________________________________________________
 
 3. SPEC: Should return user age in Venus years
 
 **Input**: 36
 
 **Output**: 58
-___________________________________________________________________________________
+________________________________________________________________________________
 
 4. SPEC: Should return user age in Mars years
 
 **Input**: 36
 
 **Output**: 19
-___________________________________________________________________________________
+________________________________________________________________________________
 
 5. SPEC: Should return user age in Jupiter years
 
 **Input**: 36
 
 **Output**: 3
-___________________________________________________________________________________
+________________________________________________________________________________
+
+6. SPEC: Should return how many years left on Earth based on life expectancy (80)
+
+**Input**: 36
+
+**Output**: 44
+________________________________________________________________________________
 
 ## Setup/Installation Requirements 
 
@@ -68,13 +75,12 @@ ________________________________________________________________________________
 
 -  `$ cd desktop`
 
--  `$ git clone`  [this repo](https://github.com/faustlarsen/space)
+-  `$ git clone` copy/paste [this repo](https://github.com/faustlarsen/space)
 
--  `$ cd todo`
+-  `$ cd space`
 
 -  `$ open index.html`
  
-
 ## Known Bugs
 
 ## Support and contact details

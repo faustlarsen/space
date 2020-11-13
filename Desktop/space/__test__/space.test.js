@@ -23,4 +23,10 @@ describe('AgeCalculator', () => {
   test(`should return user age on Jupiter`, () => {
     expect(age.ageOnJupiter()).toEqual(3);
   })
+
+  test(`should return user life expectancy on Earth`, () => {
+    expect(age.lifeExpectancy()).toEqual(36);
+  })
+
+
 })
