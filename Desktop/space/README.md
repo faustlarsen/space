@@ -41,9 +41,9 @@ ________________________________________________________________________________
 
 3. SPEC: Should return user age in Venus years
 
-**Input**: 
+**Input**: 36
 
-**Output**: 
+**Output**: 58
 ___________________________________________________________________________________
 
 4. SPEC: Should return user age in Mars years

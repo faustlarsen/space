@@ -13,4 +13,10 @@ export class AgeCalculator {
     let mercuryAge = this.age / mercury;
     return mercuryAge;
   }
+
+  ageOnVenus() {
+    let venus = 0.62;
+    let venusAge = this.age / venus;
+    return venusAge;
+  }
 }
