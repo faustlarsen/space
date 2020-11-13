@@ -14,37 +14,37 @@ export class AgeCalculator {
   }
 
   ageOnMercury() {
-    let mercuryAge = Math.floor(this.age / this.mercury);
+    let mercuryAge = Math.round(this.age / this.mercury);
     return mercuryAge;
   }
 
   ageOnVenus() {
-    let venusAge = Math.floor(this.age / this.venus);
+    let venusAge = Math.round(this.age / this.venus);
     return venusAge;
   }
 
   ageOnMars() {
-    let marsAge = Math.floor(this.age / this.mars);
+    let marsAge = Math.round(this.age / this.mars);
     return marsAge;
   }
 
   ageOnJupiter() {
-    let jupiterAge = Math.floor(this.age / this.jupiter);
+    let jupiterAge = Math.round(this.age / this.jupiter);
     return jupiterAge;
   }
 
   earthUserExpectancy() {
-    let earthExpectancy = Math.floor(this.expectancy - this.age);
+    let earthExpectancy = Math.round(this.expectancy - this.age);
     return earthExpectancy;
   }
 
   mercuryUserExpectancy() {
-    let mercuryExpectancy = Math.floor(this.earthUserExpectancy() / this.mercury);
+    let mercuryExpectancy = Math.round(this.earthUserExpectancy() / this.mercury);
     return mercuryExpectancy;
   }
 
   venusUserExpectancy() {
-    let venusExpectancy = Math.floor(this.earthUserExpectancy() / this.venus);
+    let venusExpectancy = Math.round(this.earthUserExpectancy() / this.venus);
     return venusExpectancy;
   }
 }

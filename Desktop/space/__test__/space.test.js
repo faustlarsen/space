@@ -33,7 +33,7 @@ describe('AgeCalculator', () => {
   })
 
   test(`should return user years left on Venus`, () => {
-    expect(age.venusUserExpectancy()).toEqual(36);
+    expect(age.venusUserExpectancy()).toEqual(71);
   })
 
 })
