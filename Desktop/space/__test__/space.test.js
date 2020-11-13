@@ -21,6 +21,6 @@ describe('AgeCalculator', () => {
   })
 
   test(`should return user age on Jupiter`, () => {
-    escapeSelector(age.ageOnJupiter()).toEqual(36);
+    expect(age.ageOnJupiter()).toEqual(3);
   })
 })
