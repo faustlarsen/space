@@ -41,7 +41,7 @@ describe('AgeCalculator', () => {
   })
 
   test(`should return user years left on Jupiter`, () => {
-    expect(age.jupiterUserExpectancy()).toEqual(36);
+    expect(age.jupiterUserExpectancy()).toEqual(4);
   })
 
 })
