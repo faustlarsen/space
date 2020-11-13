@@ -16,8 +16,9 @@ export class AgeCalculator {
   }
 
   ageOnMercury() {
-    this.mercuryAge = Math.round(this.age / this.mercury);
-    return this.mercuryAge;
+    this.mercuryAge = Math.round(this.age / this.mercury);   // age on mercury 
+    this.mercuryExpectancy = Math.round(this.lifeExpectancy / this.mercury); // age left on mercury
+    this.mercuryPastExpectancy = Math.round(this.mercuryAge - this.mercuryExpectancy); // age lived past life expectancy
   }
 
   ageOnVenus() {
@@ -35,10 +36,10 @@ export class AgeCalculator {
     return this.jupiterAge;
   }
 
-  earthUserExpectancy() {
-    this.earthExpectancy = Math.round(this.expectancy - this.age);
-    return this.earthExpectancy;
-  }
+  // earthUserExpectancy() {
+  //   this.earthExpectancy = Math.round(this.expectancy - this.age);
+  //   return this.earthExpectancy;
+  // }
 
   mercuryUserExpectancy() {
     this.mercuryExpectancy = Math.round(this.earthUserExpectancy() / this.mercury);
@@ -59,4 +60,5 @@ export class AgeCalculator {
     this.jupiteExpectancy = Math.round(this.earthUserExpectancy() / this.jupiter);
     return this.jupiteExpectancy;
   }
+
 }

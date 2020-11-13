@@ -4,9 +4,17 @@ import { AgeCalculator } from './../src/space.js';
 describe('AgeCalculator', () => {
   let age = new AgeCalculator(100,80);
 
-  // test('should return user age on Earth', () => {
-  //   expect(age.ageOnEarth()).toEqual(36); 
-  // })
+  test('should return years past life expectancy on Earth', () => {
+    age.ageOnEarth();
+    expect(age.ageOnEarth()).toEqual(20); 
+  })
+
+  test('should return current age, years left and years past life expectancy on Mercury', () => {
+    age.ageOnMercury();
+    expect(age.mercuryAge).toEqual(417); 
+    expect(age.mercuryExpectancy).toEqual(333); 
+    expect(age.mercuryPastExpectancy).toEqual(36); 
+  })
 
   // test('should return user age on Mercury', () => {
   //   expect(age.ageOnMercury()).toEqual(150); 
@@ -43,8 +51,4 @@ describe('AgeCalculator', () => {
   // test(`should return user years left on Jupiter`, () => {
   //   expect(age.jupiterUserExpectancy()).toEqual(4);
   // })
-
-  test('should return years past life expectancy on Earth', () => {
-    expect(age.ageOnEarth()).toEqual(20); 
-  })
 })

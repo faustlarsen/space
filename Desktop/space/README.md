@@ -93,13 +93,18 @@ ________________________________________________________________________________
 **Input**: 36
 
 **Output**: 4
-____________________________________________________________________________________
-11. SPEC: Should return how many years have lived past the life expectancy on Earth. (80)
+________________________________________________________________________________________
+11. SPEC: Should return how many years have lived past the life expectancy on Earth (80)
 
 **Input**: 100
 
 **Output**: 20
-____________________________________________________________________________________
+_______________________________________________________________________________________________________
+12. SPEC: Should return should return current age, years left and years past life expectancy on Mercury
+
+**Input**: 100, 80
+
+**Output**: 417. 333, 84
 
 ## Setup/Installation Requirements 
 
