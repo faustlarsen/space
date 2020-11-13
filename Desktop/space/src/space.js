@@ -1,6 +1,11 @@
 export class AgeCalculator {
   constructor(age) {
     this.age = age;
+    this.mercury = 0.24;
+    this.venus = 0.62;
+    this.mars = 1.88;
+    this.jupiter = 11.86;
+    this.expectancy = 80;
   }
 
   ageOnEarth() {
@@ -9,38 +14,37 @@ export class AgeCalculator {
   }
 
   ageOnMercury() {
-    let mercury = 0.24;
-    let mercuryAge = Math.floor(this.age / mercury);
+    let mercuryAge = Math.floor(this.age / this.mercury);
     return mercuryAge;
   }
 
   ageOnVenus() {
-    let venus = 0.62;
-    let venusAge = Math.floor(this.age / venus);
+    let venusAge = Math.floor(this.age / this.venus);
     return venusAge;
   }
 
   ageOnMars() {
-    let mars = 1.88;
-    let marsAge = Math.floor(this.age / mars);
+    let marsAge = Math.floor(this.age / this.mars);
     return marsAge;
   }
 
   ageOnJupiter() {
-    let jupiter = 11.86;
-    let jupiterAge = Math.floor(this.age / jupiter);
+    let jupiterAge = Math.floor(this.age / this.jupiter);
     return jupiterAge;
   }
 
   earthUserExpectancy() {
-    let expectancy = 80;
-    let earthExpectancy = Math.floor(expectancy - this.age);
+    let earthExpectancy = Math.floor(this.expectancy - this.age);
     return earthExpectancy;
   }
 
   mercuryUserExpectancy() {
-    let mercury = 0.24;
-    let mercuryExpectancy = Math.floor(this.earthUserExpectancy() / mercury);
+    let mercuryExpectancy = Math.floor(this.earthUserExpectancy() / this.mercury);
     return mercuryExpectancy;
+  }
+
+  venusUserExpectancy() {
+    let venusExpectancy = Math.floor(this.earthUserExpectancy() / this.venus);
+    return venusExpectancy;
   }
 }
