@@ -47,4 +47,9 @@ export class AgeCalculator {
     let venusExpectancy = Math.round(this.earthUserExpectancy() / this.venus);
     return venusExpectancy;
   }
+
+  marsUserExpectancy() {
+    let marsExpectancy = Math.round(this.earthUserExpectancy() / this.mars);
+    return marsExpectancy;
+  }
 }
