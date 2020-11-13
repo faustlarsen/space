@@ -99,8 +99,8 @@ ________________________________________________________________________________
 **Input**: 100
 
 **Output**: 20
-_______________________________________________________________________________________________________
-12. SPEC: Should return should return current age, years left and years past life expectancy on Mercury
+_________________________________________________________________________________________
+12. SPEC: Should return current age, years left and years past life expectancy on Mercury
 
 **Input**: 100, 80
 
