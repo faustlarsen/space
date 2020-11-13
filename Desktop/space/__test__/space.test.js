@@ -45,6 +45,6 @@ describe('AgeCalculator', () => {
   // })
 
   test('should return years past life expectancy on Earth', () => {
-    expect(age.ageOnEarth()).toEqual(10); 
+    expect(age.ageOnEarth()).toEqual(20); 
   })
 })
