@@ -22,8 +22,9 @@ export class AgeCalculator {
   }
 
   ageOnVenus() {
-    this.venusAge = Math.round(this.age / this.venus);
-    return this.venusAge;
+    this.venusAge = Math.round(this.age / this.venus);  
+    this.venusExpectancy = Math.round(this.lifeExpectancy / this.venus); 
+    this.venusPastExpectancy = Math.round(this.venusAge - this.venusExpectancy);
   }
 
   ageOnMars() {
