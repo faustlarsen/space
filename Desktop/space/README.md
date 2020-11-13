@@ -25,37 +25,37 @@ A solar year lasts 365 days on planet Earth. However, the length of a solar year
 
 ### SPECS: ###
 
-1. SPEC:
+1. SPEC: Should return user age
 
-**Input**:
+**Input**: 36
+
+**Output**: 36
+___________________________________________________________________________________
+
+2. SPEC: Should return user age in Mercury years
+
+**Input**: 
 
 **Output**: 
 ___________________________________________________________________________________
 
-2. SPEC:
+3. SPEC: Should return user age in Venus years
 
-**Input**:
-
-**Output**: 
-___________________________________________________________________________________
-
-3. SPEC:
-
-**Input**:
+**Input**: 
 
 **Output**: 
 ___________________________________________________________________________________
 
-4. SPEC:
+4. SPEC: Should return user age in Mars years
 
-**Input**:
+**Input**: 
 
 **Output**: 
 ___________________________________________________________________________________
 
-5. SPEC:
+5. SPEC: Should return user age in Jupiter years
 
-**Input**:
+**Input**: 
 
 **Output**: 
 ___________________________________________________________________________________
