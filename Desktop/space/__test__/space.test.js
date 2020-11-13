@@ -20,6 +20,6 @@ describe('AgeCalculator', () => {
     age.ageOnVenus();
     expect(age.venusAge).toEqual(161); 
     expect(age.venusExpectancy).toEqual(129); 
-    expect(age.venusPastExpectancy).toEqual(36); 
+    expect(age.venusPastExpectancy).toEqual(32); 
   })
 })
