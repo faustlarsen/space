@@ -1,60 +1,62 @@
 export class AgeCalculator {
-  constructor(age) {
+  constructor(age, expectancy) {
     this.age = age;
+    this.expectancy = expectancy;
     this.mercury = 0.24;
     this.venus = 0.62;
     this.mars = 1.88;
     this.jupiter = 11.86;
-    this.expectancy = 80;
   }
 
   ageOnEarth() {
-    let earthAge = this.age;
-    return earthAge;
+    this.earthAge = this.age;
+    this.lifeExpectancy = this.expectancy
+    this.earthPastExpectacy = this.earthAge - this.lifeExpectancy;
+    return this.earthPastExpectacy;
   }
 
   ageOnMercury() {
-    let mercuryAge = Math.round(this.age / this.mercury);
-    return mercuryAge;
+    this.mercuryAge = Math.round(this.age / this.mercury);
+    return this.mercuryAge;
   }
 
   ageOnVenus() {
-    let venusAge = Math.round(this.age / this.venus);
-    return venusAge;
+    this.venusAge = Math.round(this.age / this.venus);
+    return this.venusAge;
   }
 
   ageOnMars() {
-    let marsAge = Math.round(this.age / this.mars);
-    return marsAge;
+    this.marsAge = Math.round(this.age / this.mars);
+    return this.marsAge;
   }
 
   ageOnJupiter() {
-    let jupiterAge = Math.round(this.age / this.jupiter);
-    return jupiterAge;
+    this.jupiterAge = Math.round(this.age / this.jupiter);
+    return this.jupiterAge;
   }
 
   earthUserExpectancy() {
-    let earthExpectancy = Math.round(this.expectancy - this.age);
-    return earthExpectancy;
+    this.earthExpectancy = Math.round(this.expectancy - this.age);
+    return this.earthExpectancy;
   }
 
   mercuryUserExpectancy() {
-    let mercuryExpectancy = Math.round(this.earthUserExpectancy() / this.mercury);
-    return mercuryExpectancy;
+    this.mercuryExpectancy = Math.round(this.earthUserExpectancy() / this.mercury);
+    return this.mercuryExpectancy;
   }
 
   venusUserExpectancy() {
-    let venusExpectancy = Math.round(this.earthUserExpectancy() / this.venus);
-    return venusExpectancy;
+    this.venusExpectancy = Math.round(this.earthUserExpectancy() / this.venus);
+    return this.venusExpectancy;
   }
 
   marsUserExpectancy() {
-    let marsExpectancy = Math.round(this.earthUserExpectancy() / this.mars);
-    return marsExpectancy;
+    this.marsExpectancy = Math.round(this.earthUserExpectancy() / this.mars);
+    return this.marsExpectancy;
   }
 
   jupiterUserExpectancy() {
-    let jupiteExpectancy = Math.round(this.earthUserExpectancy() / this.jupiter);
-    return jupiteExpectancy;
+    this.jupiteExpectancy = Math.round(this.earthUserExpectancy() / this.jupiter);
+    return this.jupiteExpectancy;
   }
 }
