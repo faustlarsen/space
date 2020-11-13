@@ -34,6 +34,6 @@ describe('AgeCalculator', () => {
     age.ageOnJupiter();
     expect(age.jupiterAge).toEqual(8); 
     expect(age.jupiterExpectancy).toEqual(7); 
-    expect(age.jupiterPastExpectancy).toEqual(0); 
+    expect(age.jupiterPastExpectancy).toEqual(1); 
   })
 })
