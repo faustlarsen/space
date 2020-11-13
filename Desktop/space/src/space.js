@@ -32,9 +32,15 @@ export class AgeCalculator {
     return jupiterAge;
   }
 
-  lifeExpectancy() {
+  earthUserExpectancy() {
     let expectancy = 80;
     let earthExpectancy = Math.floor(expectancy - this.age);
     return earthExpectancy;
+  }
+
+  mercuryUserExpectancy() {
+    let mercury = 0.24;
+    let mercuryExpectancy = Math.floor(this.earthUserExpectancy() / mercury);
+    return mercuryExpectancy;
   }
 }

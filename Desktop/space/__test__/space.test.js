@@ -25,8 +25,11 @@ describe('AgeCalculator', () => {
   })
 
   test(`should return user years left on Earth`, () => {
-    expect(age.lifeExpectancy()).toEqual(44);
+    expect(age.earthUserExpectancy()).toEqual(44);
   })
 
+  test(`should return user years left on Mercury`, () => {
+    expect(age.mercuryUserExpectancy()).toEqual(36);
+  })
 
 })
