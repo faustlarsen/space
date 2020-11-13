@@ -52,4 +52,9 @@ export class AgeCalculator {
     let marsExpectancy = Math.round(this.earthUserExpectancy() / this.mars);
     return marsExpectancy;
   }
+
+  jupiterUserExpectancy() {
+    let jupiteExpectancy = Math.round(this.earthUserExpectancy() / this.jupiter);
+    return jupiteExpectancy;
+  }
 }
