@@ -1,3 +1,4 @@
+import { escapeSelector } from 'jquery';
 import { AgeCalculator } from './../src/space.js';
 
 describe('AgeCalculator', () => {
@@ -17,5 +18,9 @@ describe('AgeCalculator', () => {
 
   test('should return user age on Mars', () => {
     expect(age.ageOnMars()).toEqual(19); 
+  })
+
+  test(`should return user age on Jupiter`, () => {
+    escapeSelector(age.ageOnJupiter()).toEqual(36);
   })
 })
