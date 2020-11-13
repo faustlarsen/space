@@ -28,8 +28,9 @@ export class AgeCalculator {
   }
 
   ageOnMars() {
-    this.marsAge = Math.round(this.age / this.mars);
-    return this.marsAge;
+    this.marsAge = Math.round(this.age / this.mars);  
+    this.marsExpectancy = Math.round(this.lifeExpectancy / this.mars); 
+    this.marsPastExpectancy = Math.round(this.marsAge - this.marsExpectancy);
   }
 
   ageOnJupiter() {
@@ -37,10 +38,7 @@ export class AgeCalculator {
     return this.jupiterAge;
   }
 
-  // earthUserExpectancy() {
-  //   this.earthExpectancy = Math.round(this.expectancy - this.age);
-  //   return this.earthExpectancy;
-  // }
+
 
   mercuryUserExpectancy() {
     this.mercuryExpectancy = Math.round(this.earthUserExpectancy() / this.mercury);
