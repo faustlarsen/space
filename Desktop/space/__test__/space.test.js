@@ -27,6 +27,6 @@ describe('AgeCalculator', () => {
     age.ageOnMars();
     expect(age.marsAge).toEqual(53); 
     expect(age.marsExpectancy).toEqual(43); 
-    expect(age.marsPastExpectancy).toEqual(36); 
+    expect(age.marsPastExpectancy).toEqual(10); 
   })
 })
