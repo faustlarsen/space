@@ -29,4 +29,11 @@ describe('AgeCalculator', () => {
     expect(age.marsExpectancy).toEqual(43); 
     expect(age.marsPastExpectancy).toEqual(10); 
   })
+
+  test('should return current age, years left and years past life expectancy on Jupiter', () => {
+    age.ageOnJupiter();
+    expect(age.jupiterAge).toEqual(8); 
+    expect(age.jupiterExpectancy).toEqual(7); 
+    expect(age.jupiterPastExpectancy).toEqual(0); 
+  })
 })

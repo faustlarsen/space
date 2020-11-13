@@ -34,8 +34,9 @@ export class AgeCalculator {
   }
 
   ageOnJupiter() {
-    this.jupiterAge = Math.round(this.age / this.jupiter);
-    return this.jupiterAge;
+    this.jupiterAge = Math.round(this.age / this.jupiter);  
+    this.jupiterExpectancy = Math.round(this.lifeExpectancy / this.jupiter); 
+    this.jupiterPastExpectancy = Math.round(this.jupiterAge - this.jupiterExpectancy);
   }
 
 
