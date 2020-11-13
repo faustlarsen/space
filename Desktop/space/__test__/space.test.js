@@ -4,6 +4,6 @@ describe('AgeCalculator', () => {
   let age = new AgeCalculator(36);
 
   test('should return user age', () => {
-    expect(age.yearsOnEarth()).toEqual(33); 
+    expect(age.yearsOnEarth()).toEqual(36); 
   })
 })
