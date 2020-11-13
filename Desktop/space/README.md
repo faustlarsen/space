@@ -48,9 +48,9 @@ ________________________________________________________________________________
 
 4. SPEC: Should return user age in Mars years
 
-**Input**: 
+**Input**: 36
 
-**Output**: 
+**Output**: 19
 ___________________________________________________________________________________
 
 5. SPEC: Should return user age in Jupiter years
