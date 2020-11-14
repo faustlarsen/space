@@ -4,7 +4,7 @@ describe('SpaceCalculator', () => {
   let age = new SpaceCalculator(100,80);
 
   test('should return years past life expectancy on Earth', () => {
-    expect(age.earthPastExpectacy).toEqual(20); 
+    expect(age.earthExpectacy).toEqual(20); 
   })
 
   test('should return current age, years left and years past life expectancy on Mercury', () => {

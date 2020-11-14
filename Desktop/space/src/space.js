@@ -7,7 +7,7 @@ export class SpaceCalculator {
     this.mars = 1.88;
     this.jupiter = 11.86;
 
-    this.earthPastExpectacy = this.age - this.expectancy;
+    this.earthExpectacy = this.age - this.expectancy;
 
     this.mercuryAge = Math.round(this.age / this.mercury);  
     this.mercuryExpectancy = Math.round(this.expectancy / this.mercury); 
